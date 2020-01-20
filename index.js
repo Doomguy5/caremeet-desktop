@@ -3,6 +3,7 @@ const {app, BrowserWindow, Tray, Menu, MenuItem, Notification, protocol, ipcMain
 require('electron-reload')(__dirname);
 let CWINDOW;
 let tray = null;
+let contributions = 'True'
 let PROTOCOL_PREFIX = "caremeet";
 
 app.commandLine.appendSwitch('ignore-certificate-errors', 'true');
